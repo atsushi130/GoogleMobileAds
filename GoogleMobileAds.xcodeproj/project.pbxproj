@@ -7,14 +7,47 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		0DE02AA724EBAE45001CA022 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleAppMeasurement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE02AA824EBAE45001CA022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/atsushi/workspace/GoogleMobileAds/GoogleAppMeasurement/Info.plist; sourceTree = "<absolute>"; };
+		0DE02AAE24EBAF31001CA022 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE02AAF24EBAF31001CA022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/atsushi/workspace/GoogleMobileAds/GoogleUtilities/Info.plist; sourceTree = "<absolute>"; };
+		0DE02AB524EBAF3A001CA022 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE02AB624EBAF3A001CA022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/atsushi/workspace/GoogleMobileAds/nanopb/Info.plist; sourceTree = "<absolute>"; };
 		210990CE21745DE400A90EE7 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleMobileAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		210990D221745DE400A90EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0DE02AB724EBB0D3001CA022 /* GoogleAppMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				0DE02AA824EBAE45001CA022 /* Info.plist */,
+			);
+			path = GoogleAppMeasurement;
+			sourceTree = "<group>";
+		};
+		0DE02AB824EBB17E001CA022 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				0DE02AAF24EBAF31001CA022 /* Info.plist */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		0DE02AB924EBB184001CA022 /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				0DE02AB624EBAF3A001CA022 /* Info.plist */,
+			);
+			path = nanopb;
+			sourceTree = "<group>";
+		};
 		210990C421745DE400A90EE7 = {
 			isa = PBXGroup;
 			children = (
+				0DE02AB924EBB184001CA022 /* nanopb */,
+				0DE02AB824EBB17E001CA022 /* GoogleUtilities */,
+				0DE02AB724EBB0D3001CA022 /* GoogleAppMeasurement */,
 				210990D021745DE400A90EE7 /* GoogleMobileAds */,
 				210990CF21745DE400A90EE7 /* Products */,
 			);
@@ -24,6 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				210990CE21745DE400A90EE7 /* GoogleMobileAds.framework */,
+				0DE02AA724EBAE45001CA022 /* GoogleAppMeasurement.framework */,
+				0DE02AAE24EBAF31001CA022 /* GoogleUtilities.framework */,
+				0DE02AB524EBAF3A001CA022 /* nanopb.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -39,6 +75,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0DE02AA224EBAE45001CA022 /* GoogleAppMeasurement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE02AA424EBAE45001CA022 /* Build configuration list for PBXNativeTarget "GoogleAppMeasurement" */;
+			buildPhases = (
+				0DE02AA324EBAE45001CA022 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleAppMeasurement;
+			productName = GoogleMobileAds;
+			productReference = 0DE02AA724EBAE45001CA022 /* GoogleAppMeasurement.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0DE02AA924EBAF31001CA022 /* GoogleUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE02AAB24EBAF31001CA022 /* Build configuration list for PBXNativeTarget "GoogleUtilities" */;
+			buildPhases = (
+				0DE02AAA24EBAF31001CA022 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleUtilities;
+			productName = GoogleMobileAds;
+			productReference = 0DE02AAE24EBAF31001CA022 /* GoogleUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0DE02AB024EBAF3A001CA022 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE02AB224EBAF3A001CA022 /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				0DE02AB124EBAF3A001CA022 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = GoogleMobileAds;
+			productReference = 0DE02AB524EBAF3A001CA022 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		210990CD21745DE400A90EE7 /* GoogleMobileAds */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 210990D621745DE400A90EE7 /* Build configuration list for PBXNativeTarget "GoogleMobileAds" */;
@@ -81,11 +162,65 @@
 			projectRoot = "";
 			targets = (
 				210990CD21745DE400A90EE7 /* GoogleMobileAds */,
+				0DE02AA224EBAE45001CA022 /* GoogleAppMeasurement */,
+				0DE02AA924EBAF31001CA022 /* GoogleUtilities */,
+				0DE02AB024EBAF3A001CA022 /* nanopb */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0DE02AA324EBAE45001CA022 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_NAME=GoogleMobileAdsSdkiOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL http://dl.google.com/googleadmobadssdk/googlemobileadssdkios-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\n\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleAppMeasurement.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleAppMeasurement.framework/Modules/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleAppMeasurement.framework/GoogleAppMeasurement -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\n\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+		};
+		0DE02AAA24EBAF31001CA022 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_NAME=GoogleMobileAdsSdkiOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL http://dl.google.com/googleadmobadssdk/googlemobileadssdkios-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\n\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleUtilities.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleUtilities.framework/Modules/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleUtilities.framework/GoogleUtilities -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\n\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+		};
+		0DE02AB124EBAF3A001CA022 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_NAME=GoogleMobileAdsSdkiOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL http://dl.google.com/googleadmobadssdk/googlemobileadssdkios-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\n\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/nanopb.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/nanopb.framework/Modules/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/nanopb.framework/nanopb -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\n\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+		};
 		210990D921745F2900A90EE7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,16 +236,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "BASE_NAME=GoogleMobileAdsSdkiOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL http://dl.google.com/googleadmobadssdk/googlemobileadssdkios-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/Mediation && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/Mediation/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/RTBMediation && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/RTBMediation/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Modules/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/GoogleMobileAds -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
+			shellScript = "BASE_NAME=GoogleMobileAdsSdkiOS-${CURRENT_PROJECT_VERSION}\nMODULES_FOLDER_PATH=${EXECUTABLE_FOLDER_PATH}/Modules\ncurl -fsL http://dl.google.com/googleadmobadssdk/googlemobileadssdkios-${CURRENT_PROJECT_VERSION}.zip | tar -xf - -C ${PROJECT_TEMP_ROOT}\n\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/Mediation && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/Mediation/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/RTBMediation && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Headers/RTBMediation/*.h $_\nmkdir -p ${TARGET_BUILD_DIR}/${MODULES_FOLDER_PATH} && cp ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/Modules/module.modulemap $_\nlipo -extract $( echo ${ARCHS} | sed -e 's/ / -extract /g' ) ${PROJECT_TEMP_ROOT}/${BASE_NAME}/GoogleMobileAds.framework/GoogleMobileAds -o ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\n\nchmod 644 ${TARGET_BUILD_DIR}/${EXECUTABLE_FOLDER_PATH}/${TARGET_NAME}\nrm -rf ${PROJECT_TEMP_ROOT}/${BASE_NAME}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0DE02AA524EBAE45001CA022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = GoogleAppMeasurement/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GoogleAppMeasurement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DE02AA624EBAE45001CA022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = GoogleAppMeasurement/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GoogleAppMeasurement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0DE02AAC24EBAF31001CA022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = GoogleUtilities/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GoogleUtilities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DE02AAD24EBAF31001CA022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = GoogleUtilities/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GoogleUtilities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0DE02AB324EBAF3A001CA022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = nanopb/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.nanopb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DE02AB424EBAF3A001CA022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 7.55.0;
+				INFOPLIST_FILE = nanopb/Info.plist;
+				MARKETING_VERSION = 7.55.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.nanopb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		210990D421745DE400A90EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 7.42.0;
+				CURRENT_PROJECT_VERSION = 7.55.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -121,7 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CURRENT_PROJECT_VERSION = 7.42.0;
+				CURRENT_PROJECT_VERSION = 7.55.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -153,6 +354,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0DE02AA424EBAE45001CA022 /* Build configuration list for PBXNativeTarget "GoogleAppMeasurement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE02AA524EBAE45001CA022 /* Debug */,
+				0DE02AA624EBAE45001CA022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DE02AAB24EBAF31001CA022 /* Build configuration list for PBXNativeTarget "GoogleUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE02AAC24EBAF31001CA022 /* Debug */,
+				0DE02AAD24EBAF31001CA022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DE02AB224EBAF3A001CA022 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DE02AB324EBAF3A001CA022 /* Debug */,
+				0DE02AB424EBAF3A001CA022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		210990C821745DE400A90EE7 /* Build configuration list for PBXProject "GoogleMobileAds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
